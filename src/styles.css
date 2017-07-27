@@ -1,1 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    position: relative;
+    margin: 0;
+    font-family: Roboto, Helvetica, sans-serif;
+}
+
+.content {
+    margin-top: 6em;
+}

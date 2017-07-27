@@ -1,3 +1,39 @@
-<p>
-  home works!
-</p>
+<div class="home"></div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <md-spinner class="spin" strokeWidth="5" *ngIf="showSpinner"></md-spinner>
+            <div *ngIf="current" class="todays-weather">
+                <span class="location">{{current.display_location.full}}</span><br>
+                <img src=""><span class="weather-title">{{current.feelslike_c}}&deg; C</span><br>
+                <span class="weather-subtitle">{{current.weather}}</span>
+                <p>
+                    <span class="weather-item">Feels Like  {{current.feelslike_c}}&deg; C</span>
+                    <span class="weather-item">Wind  {{current.wind_kph}} km/h</span>
+                    <span class="weather-item">Visibility  {{current.visibility_km}} km</span>
+                </p>
+                <div class="weather-item">Barometer {{current.pressure_mb}} mb</div>
+                <div class="weather-item">Humidity {{current.relative_humidity}}</div>
+                <div class="weather-item">Dew Point {{current.dewpoint_c}}&deg; C</div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <h1>Daily Forecast</h1>
+    </div>
+    <div *ngIf="res" class="row">
+        <div *ngFor="let daysweather of res" class="col-md-3 col-sm-4 col-xs-6">
+            <div class="panel panel-info">
+                <div class="panel-heading">
+                    <h3 class="panel-title">{{daysweather.date.weekday_short}} {{daysweather.date.day}}</h3>
+                </div>
+                <div class="panel-body">
+                    <img src="{{daysweather.icon_url}}" alt="{{daysweather.icon}}">
+                    <span class="high-temp">{{daysweather.high.celsius}}&deg;</span>
+                    <span class="low-temp">{{daysweather.low.celsius}}&deg;</span>
+                    <p>{{daysweather.conditions}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

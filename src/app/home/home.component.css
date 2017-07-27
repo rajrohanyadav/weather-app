@@ -1,0 +1,65 @@
+.home {
+    background: url('../../assets/img/loginbg.jpg');
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+}
+
+.weather-title {
+    font-size: 3em;
+    font-weight: 500;
+}
+
+.weather-subtitle {
+    font-size: 2em;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.todays-weather {
+    z-index: 150;
+    color: #01579B;
+}
+
+.location {
+    font-size: 1.4em;
+    font-weight: 300;
+}
+
+.weather-item {
+    margin: 0 15px;
+    font-size: 1.2em;
+    display: inline-block;
+}
+
+.spin {
+    margin: 6em auto;
+}
+
+.weather-card {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.high-temp {
+    font-size: 2em;
+    margin-right: 5px;
+    margin-left: 15px;
+}
+
+.low-temp {
+    font-size: 1.2em;
+    margin-left: 5px;
+}
+
+a {
+    color: currentColor;
+    text-decoration: none;
+}
+
+a:focus {
+    outline: none;
+}

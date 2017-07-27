@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { WeatherService } from '../providers/weather.service';
 
 @Component({
   selector: 'app-home',
@@ -7,9 +8,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  private res: any[];
+  private current: any;
+  private showSpinner: boolean = true;
+
+  constructor(private weatherService: WeatherService) { }
 
   ngOnInit() {
+    this.weatherService.fetchCurrentWeatherData()
+    .subscribe(res => {
+      this.current = res.current_observation;
+      this.showSpinner = false;
+    });
+    this.weatherService.fetchWeatherData()
+    .subscribe(res => {
+      this.res = res.forecast.simpleforecast.forecastday;
+    });
   }
 
 }

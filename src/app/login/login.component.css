@@ -1,0 +1,37 @@
+.login-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: url('../../assets/img/loginbg.jpg') no-repeat;
+    background-size: cover;
+    z-index: 200;
+}
+
+.login-card {
+    z-index: 300;
+}
+
+.login-form {
+    padding: 25px;
+    width: 100%;
+}
+
+.input {
+    width: 100%;
+    padding: 0 10px;
+}
+
+.reg-p {
+    margin-top: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: currentColor;
+}
+
+a:focus {
+    outline: none;
+}

@@ -1,0 +1,13 @@
+a {
+    text-decoration: none;
+    color: currentColor;
+    margin: 20px;
+}
+
+a:focus {
+    outline: none;
+}
+
+.not-found {
+    margin: 20px;
+}
