@@ -1,3 +1,5 @@
+## No longer maintained
+
 # WeatherApp
 
 This is a simple weather's app that uses Weather Underground API to fetch weather data, and displays that in a well organised way. This app is hosted on the firebase hosting. It also uses basic authentication.
@@ -17,4 +19,4 @@ https://weather-app-be515.web.app/
 
 ## Important Note
 
-Since the deployment of this app, the way Underground Weather API handles requests has changed, therefore this app is no longer working. I'll solve the issue as soon as I get time.
+Since the deployment of this app, the way Underground Weather API handles requests has changed, therefore this app is no longer working.
